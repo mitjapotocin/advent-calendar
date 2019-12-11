@@ -41,6 +41,7 @@ h1 {
   width: 100%;
   height: 140px;
   overflow: hidden;
+  cursor: pointer;
   background: #000;
 }
 .day-box img {
