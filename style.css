@@ -5,8 +5,14 @@
   /* The character count on */
   --lineHeight: calc(var(--fontSize) * 1.4);
   --letterSpacing: calc(var(--fontSize) * 0.0015);
-  --fontWeight: 300;
-  color: #fff;
+  --h1color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #242424;
+    --background-days: #eb1736;
+    --h1color: #fff;
+  }
 }
 * {
   box-sizing: border-box;
@@ -14,13 +20,14 @@
 body {
   font-family: "Pacifico", cursive;
   margin: 0;
+  background: var(--background);
 }
 h1 {
   font-size: calc(var(--fontSize) * 3);
   letter-spacing: var(--letterSpacing);
   font-weight: calc(var(--fontWeight) * 2.66);
   text-align: center;
-  color: #000;
+  color: var(--h1color);
 }
 .container {
   padding: 0px 15px;
